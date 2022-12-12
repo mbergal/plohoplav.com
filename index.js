@@ -8,4 +8,5 @@ window.addEventListener("load", (event) => {
   var randomImage = images[Math.floor(Math.random() * images.length)];
 
   document.getElementById("hero").src = randomImage;
+  document.getElementById("hero").style.visibility = "visible";
 });
