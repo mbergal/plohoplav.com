@@ -6,7 +6,9 @@ window.addEventListener("load", (event) => {
     "maradona.svg",
   ];
   var randomImage = images[Math.floor(Math.random() * images.length)];
-
-  document.getElementById("hero").src = randomImage;
-  document.getElementById("hero").style.visibility = "visible";
+  var img = document.getElementById("hero");
+  img.src = randomImage;
+  img.addEventListener("load", function () {
+    img.style.visibility = "visible";
+  });
 });
