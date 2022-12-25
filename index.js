@@ -7,6 +7,7 @@ window.addEventListener("load", (event) => {
     "birth.svg",
     "thread.svg",
     "not-important.svg",
+    "hair-dryer.svg"
   ];
   var randomImage = images[Math.floor(Math.random() * images.length)];
   var img = document.getElementById("hero");
